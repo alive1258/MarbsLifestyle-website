@@ -1,0 +1,1804 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/angelic-bonques-free');
+
+/* Resetting default padding, margin, and box-sizing for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+/* Defining custom variables for color and font */
+:root {
+  --nav-menu-color: #0c4482;
+  --montserrat-font: 'Montserrat', sans-serif;
+  --angelic-font: 'Angelic Bonques Free', sans-serif;
+
+  --primary-color: #bd944e;
+  --secondary-color: #102a66;
+  --title-color: #223557;
+}
+/* Container class to limit maximum width and center the content */
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+/* Main section layout */
+.main-section {
+  max-width: 1480px;
+  margin: auto;
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.d-none {
+  display: none;
+}
+.header-startmarks {
+  display: flex;
+  align-items: center;
+}
+
+.menuItems {
+  padding: 16px 3px;
+  position: relative;
+}
+
+.barToggle {
+  height: 40px;
+  width: 50px;
+  border: none;
+  background: transparent;
+  display: none;
+}
+
+/* Utility class to hide elements */
+.d-none {
+  display: none;
+}
+/* Anchor tag styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Overflow handling for marquee */
+.marqLive {
+  overflow: hidden;
+}
+/* Top bar section layout */
+.topBarSection {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Header section styling */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+/* Styling for list items in the header */
+.header-section li {
+  color: var(--nav-menu-color);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  gap: 11px;
+  white-space: nowrap;
+}
+/* Styling for logo images on small screens */
+.marbslifestyle-logo-phn img {
+  display: none;
+}
+/* Styling for header icons */
+.header-icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+/* Styling for Starmarks in the header */
+.header-starmarks {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation layout */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 15px 40px;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 28px;
+  display: none;
+}
+/* Styling for list items in the navigation */
+.nav li {
+  color: var(--main-bg-color); /* Using a custom variable for text color */
+  list-style: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--montserrat-font); /* Using a custom font */
+}
+/* Button to toggle navigation menu on small screens */
+.barToggle {
+  height: 40px;
+  width: 50px;
+  border: none;
+  background: transparent;
+  display: none;
+}
+/* Section for navigation buttons */
+.nav-btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+/* Styling for image buttons in the navigation */
+.nav-btn-section img {
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+}
+/* Styling for the registration button in the navigation */
+.nav-register-btn {
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color);
+  background: #ffffff;
+  width: 98px;
+  max-width: 100%;
+}
+/* Styling for general navigation buttons */
+.nav-btn {
+  background: var(--primary-color);
+  border: var(--primary-color);
+  border-radius: 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffff;
+  width: 86px;
+  max-width: 100%;
+  height: 52px;
+}
+/* Styling for social media icons in the navigation */
+.nav-social-icon {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+/* ------  Styling for the hero section  ------- */
+.hero {
+  padding-top: 135px;
+}
+.hero-section {
+  height: 200px;
+  background-image: url('./image/header-img.png');
+  background-size: cover;
+}
+/* Styling for the menu items in the hero section */
+.hero-menu {
+  font-family: var(--montserrat-font);
+  color: #ffffff;
+  text-shadow: 1px 2px 2px rgba(13, 19, 30, 0.7);
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  text-decoration-line: underline;
+  gap: 41px;
+}
+/* Styling for the back button in the hero section */
+.hero-back {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+/* Styling for sub-menu items */
+.sub-menu {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+/* Styling for the hero choice section */
+.hero-choice {
+  padding-top: 14px;
+  color: #fff;
+  text-shadow: 1px 2px 2px rgba(13, 19, 30, 0.7);
+  font-style: normal;
+}
+/* Styling for headings and paragraphs in the hero choice section */
+.hero-choice h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+.hero-choice p {
+  font-family: var(--montserrat-font);
+  padding-top: 9px;
+  font-weight: 200;
+  font-size: 14px;
+}
+/* Styling for upcoming events section */
+.upcoming-events {
+  background: var(--secondary-color);
+  border-radius: 0px 0px 8px 8px;
+  padding: 37px 30px 16px 30px;
+  width: 358px;
+  position: relative;
+  z-index: 50;
+}
+.upcoming-events h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  color: #fff;
+  padding-top: 25px;
+}
+.upcoming-events h6 {
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 6px;
+  font-family: var(--montserrat-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+}
+/* Styling for event details */
+.event {
+  cursor: pointer;
+  padding-top: 23px;
+  color: #fff;
+  font-family: var(--montserrat-font);
+}
+/* Styling for event date */
+
+.calender-arrow {
+  position: absolute;
+  height: 12px;
+  width: 2px;
+  background: #ffffff;
+  top: -6px;
+  left: 15px;
+  transform: rotate(180deg);
+}
+.calender-arrow2 {
+  position: absolute;
+  height: 12px;
+  width: 2px;
+  background: #ffffff;
+  top: -6px;
+  left: 50px;
+  transform: rotate(180deg);
+}
+.event-date {
+  position: relative;
+  border: 1px solid #ffffff;
+  width: 68px;
+  padding-top: 13px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.event-date h4 {
+  border-top: 1px solid #ffffff;
+  padding-top: 3px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.event-date h5 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--montserrat-font);
+}
+/* Styling for event section */
+.event-section {
+  display: flex;
+  gap: 13px;
+  z-index: 1;
+}
+.event:hover .event-date {
+  border: 1px solid var(--primary-color);
+}
+.event:hover .event-date h4 {
+  border-top: 1px solid var(--primary-color);
+}
+.event:hover .event-date .calender-arrow2 {
+  background: var(--primary-color);
+}
+.event:hover .event-date .calender-arrow {
+  background: var(--primary-color);
+}
+.event:hover {
+  color: var(--primary-color);
+}
+/* Styling for event description */
+.event-description h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--montserrat-font);
+}
+.event-description p {
+  font-size: 12px;
+  padding-top: 3px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--montserrat-font);
+}
+/* Styling for view event link */
+.view-event {
+  padding-top: 10px !important;
+  text-decoration-line: underline;
+}
+/* Styling for view all link */
+.view-all {
+  color: #ffffff;
+  padding-top: 14px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration-line: underline;
+  font-family: var(--montserrat-font);
+}
+/* Styling for the "unveiling-marbella" section */
+.unveiling-marbella {
+  margin-top: 40px;
+  width: calc(100% - 390px);
+  max-width: 917px;
+}
+
+@media screen and (max-width: 1000px) {
+  .unveiling-marbella {
+    width: calc(100% - 350px);
+  }
+  .hero-section {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .unveiling-marbella {
+    width: calc(100% - 300px);
+  }
+  .upcoming-events {
+    padding: 20px 15px 10px 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .unveiling-marbella {
+    width: 100%;
+  }
+  .upcoming-events {
+    display: none;
+  }
+}
+/* Styling for the title in the "unveiling-marbella" section */
+.marbella-title {
+  font-size: 20px;
+  font-style: normal;
+  color: var(--secondary-color); /* Use custom color variable */
+}
+/* Hide the "Read More" element in the "unveiling-marbella" section */
+.marbella-read-more {
+  display: none;
+}
+/* Styling for the description in the "unveiling-marbella" section */
+.marbella-des {
+  padding-top: 10px;
+  font-size: 14px;
+  color: var(--title-color); /* Use custom color variable */
+  font-family: var(--montserrat-font); /* Use custom font family */
+  font-style: normal;
+  font-weight: 400;
+}
+/* Additional styling for the description in the "unveiling-marbella" section */
+.marbella-des-secound {
+  padding-top: 30px;
+}
+/* Styling for the "our-choices" section */
+.our-choices {
+  background-color: #f4f9f9;
+  margin-top: 40px;
+}
+/* Styling for the heading in the "our-choices" section */
+.choice h1 {
+  padding-top: 40px;
+  font-size: 20px;
+  font-style: normal;
+  color: var(--secondary-color); /* Use custom color variable */
+}
+/* Styling for the card section in the "our-choices" section */
+.choice-card-section {
+  padding-top: 20px;
+  display: grid;
+  max-width: 917px;
+  grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+  gap: 24px;
+}
+/* Styling for individual cards */
+.card {
+  border-radius: 8px;
+  /* width: 289px; */
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Styling for the button inside each card */
+.card-btn {
+  border-radius: 8px 0px 0px 8px;
+  background: #00a0e4;
+  padding: 16px 14px;
+  border-style: none;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: var(--montserrat-font);
+  position: absolute;
+  color: #ffffff;
+  top: 125px;
+  right: 0;
+}
+/* Styling for the image inside each card */
+.card-image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 195px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.card-img1 {
+  background-image: url('./image/card1.jpg');
+}
+.card-img2 {
+  background-image: url('./image/card2.jpg');
+}
+.card-img3 {
+  background-image: url('./image/card3.jpg');
+}
+.card-img4 {
+  background-image: url('./image/card4.jpg');
+}
+.card-img5 {
+  background-image: url('./image/card5.jpg');
+}
+.card-img6 {
+  background-image: url('./image/card6.jpg');
+}
+.card-img7 {
+  background-image: url('./image/card7.jpg');
+}
+.card-img8 {
+  background-image: url('./image/card8.jpg');
+}
+.card-img9 {
+  background-image: url('./image/card9.jpg');
+}
+/* Styling for the content within each card */
+.card-content {
+  padding: 24px;
+}
+/* Styling for the category text within each card */
+.card .category {
+  color: #aebec3;
+  font-family: var(--montserrat-font); /* Use custom font family */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 200;
+}
+/* Styling for the title within each card */
+.card-content h2 {
+  padding-top: 5px;
+  font-size: 17px;
+  font-style: normal;
+}
+/* Styling for the description within each card */
+.card-description {
+  padding-top: 8px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 200;
+  font-family: var(--montserrat-font); /* Use custom font family */
+  color: var(--title-color); /* Use custom color variable */
+}
+/* Styling for the bottom section of each card */
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+/* Styling for the "Read More" link within each card */
+.read-more {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  color: var(--secondary-color); /* Use custom color variable */
+  font-family: var(--montserrat-font); /* Use custom font family */
+  text-decoration-line: underline;
+}
+/* Styling for the date within each card */
+.card-date {
+  color: #aebec3;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  font-family: var(--montserrat-font); /* Use custom font family */
+}
+/* Styling for the bottom section of the "our-choices" section */
+.choice-bottom {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  font-family: var(--montserrat-font); /* Use custom font family */
+  color: var(--secondary-color); /* Use custom color variable */
+  text-align: center;
+  padding-top: 24px;
+  text-decoration-line: underline;
+  margin-bottom: 30px;
+}
+/* Styling for the "latest-blog" section */
+.latest-blog {
+  margin-top: 250px;
+  background-color: #ffffff;
+  width: 358px;
+  padding: 46px 29px;
+  position: relative;
+  z-index: 2;
+}
+/* Styling for the image within the "latest-blog" section */
+.blog-img {
+  width: 300px;
+  height: 600px;
+}
+/* Styling for the title within the "latest-blog" section */
+.blog-title {
+  padding-top: 26px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  color: var(--secondary-color); /* Use custom color variable */
+}
+.blog-details {
+  padding-top: 39px;
+  display: flex;
+  gap: 15px;
+}
+/* Styling for text elements within the details section of the "latest-blog" section */
+.blog-details h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--secondary-color); /* Use custom color variable */
+  font-family: var(--montserrat-font); /* Use custom font family */
+}
+.blog-details p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--secondary-color); /* Use custom color variable */
+  font-family: var(--montserrat-font); /* Use custom font family */
+}
+/* Styling for the bottom section of the "latest-blog" section */
+.blog-bottom {
+  padding-top: 39px;
+  width: 300px;
+  height: 250px;
+}
+
+/* Styling for the "weekly-update" section */
+.weekly-update {
+  background-color: #112966;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  z-index: -1;
+  /* bottom: 320px; */
+}
+/* Styling for the section containing the title and form in the "weekly-update" section */
+.weekly-update-section {
+  display: flex;
+  gap: 56px;
+  flex-direction: row;
+}
+/* Styling for the title within the "weekly-update" section */
+.weekly-update-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  font-family: var(--montserrat-font);
+}
+/* Styling for elements within the title section of the "weekly-update" section */
+.weekly-update-title p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Styling for images within the title section of the "weekly-update" section */
+.weekly-update-title img {
+  padding-top: 8px;
+}
+/* Styling for the form within the "weekly-update" section */
+.weekly-update-form {
+  display: flex;
+  height: 52px;
+}
+/* Styling for the input field within the form of the "weekly-update" section */
+.weekly-update-form input {
+  width: 390px;
+  padding-left: 10px;
+  border-style: none;
+}
+/* Styling for the email subscription button */
+.email-subscribe {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/* Styling for the subscribe button */
+.subscribe-btn {
+  background: var(--primary-color);
+  border: var(--primary-color);
+  padding: 16px 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* Styling for the "magazine-section" */
+.magazine-section {
+  background-color: #f4f9f9;
+  overflow: hidden;
+  /* position: relative;
+  bottom: 160px; */
+  /* margin-bottom: 160px; */
+}
+/* Styling for the "magazine" section */
+.magazine {
+  padding-top: 40px;
+}
+/* Styling for the "exclusive-marbsl" section */
+.exclusive-marbsl {
+  padding-top: 24px;
+  padding-bottom: 130px;
+}
+/* Styling for the exclusive magazine section */
+.exclusive-magazine {
+  background: linear-gradient(
+      0deg,
+      rgba(16, 42, 102, 0.6) 0%,
+      rgba(16, 42, 102, 0.6) 100%
+    ),
+    url('./image/exclusive.jpg') lightgray 50% / cover no-repeat;
+  border-radius: 8px;
+  height: 477px;
+}
+/* Styling for the image container within exclusive magazine */
+.marbslifestyle-img {
+  position: relative;
+}
+/* Styling for the image within exclusive magazine */
+.marbslifestyle-img img {
+  position: absolute;
+  top: 223px;
+  right: -30px;
+}
+
+.marbslifestyle {
+  display: flex;
+}
+/* Styling for the exclusive magazine title */
+.exclusive-magazine h1 {
+  padding-top: 32px;
+  font-size: 28px;
+  color: #ffffff;
+  padding-left: 32px;
+}
+/* Styling for the form section within exclusive magazine */
+.exclusive-form-section {
+  padding-top: 20px;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  font-family: var(--montserrat-font); /* Use custom font family */
+}
+/*  Styling for the form label */
+.form-lable {
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  font-family: var(--montserrat-font);
+}
+.form-exclusive {
+  padding-top: 20px;
+}
+/* Styling for the form */
+.form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* Styling for form inputs */
+.form-input {
+  width: 100%;
+  height: 52px;
+  border-radius: 4px;
+  border-style: none;
+  padding-left: 24px;
+  font-size: 18px;
+  font-family: var(--montserrat-font); /* Use custom font family */
+  font-style: normal;
+  font-weight: 200;
+}
+/* Styling for form input container */
+.input {
+  padding-top: 8px;
+}
+.form-whatsapp {
+  padding-top: 20px;
+}
+/* Styling for input field with image */
+.input-with-image {
+  border-radius: 4px;
+  width: 416px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #ffffff;
+}
+/* Styling for WhatsApp icon */
+.whatsapp-icon {
+  width: 23.82px;
+  height: 24px;
+}
+/* Styling for newsletter checkbox */
+.newsletter-checkbox {
+  padding-top: 20px;
+}
+/* Styling for newsletter checkbox label */
+.form-checkbox-lable {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  color: #ffffff;
+  font-family: var(--montserrat-font);
+}
+/* Styling for a button with class .club-btn */
+.club-btn {
+  padding-top: 20px;
+}
+/* Styling for a button with class .join-club-btn */
+.join-club-btn {
+  background-color: var(--primary-color);
+  width: 437px;
+  height: 52px;
+  padding: 0px 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 4px;
+}
+/* Styling for the footer section */
+.footer {
+  background-color: var(--secondary-color);
+}
+.footer-details {
+  padding-top: 70px;
+}
+/* Styling for the content grid within the footer */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+}
+.col-span-2 {
+  grid-column: span 2; /* This will span the column across two grid tracks */
+}
+/* Styling for footer content titles */
+.footer-content-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+/* Styling for a specific title in the footer */
+.footer-Unlock-title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  font-family: var(--angelic-font);
+}
+/* Styling for list items within footer links */
+.footer-link-list li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 12px;
+  padding-top: 4px;
+  font-weight: 400;
+  font-family: var(--montserrat-font);
+}
+/* Styling for subscription section */
+.Subscribe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Styling for subscription title */
+.Subscribe h6 {
+  font-size: 18px;
+  font-style: normal;
+  color: #ffffff;
+}
+/* Styling for subscription image */
+.Subscribe img {
+  padding-top: 8px;
+}
+/* Styling for newsletter section */
+.newsletter {
+  color: var(--primary-color);
+}
+.footer-social-section {
+  padding-top: 40px;
+}
+.footer-social-section h6 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: var(--montserrat-font);
+}
+.footer-social-icon {
+  padding-top: 10px;
+  display: flex;
+  gap: 25px;
+  color: #ffffff;
+}
+
+.footer-border {
+  margin-top: 78px;
+  border-top: 1px solid #fff;
+}
+
+.copy-right-footer {
+  padding-top: 21px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 12px;
+
+  font-family: var(--montserrat-font);
+}
+.footer-logo {
+  display: none;
+}
+.footer-email {
+  margin-top: 25px;
+}
+.fa-bars {
+  color: var(--primary-color);
+  font-size: large;
+}
+.fa-xmark {
+  color: var(--primary-color);
+  font-size: large;
+}
+
+/* for mobile responsive */
+@media only screen and (max-width: 350px) {
+  .marbella-read-more {
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+  }
+  .fa-angle-down {
+    text-decoration-line: underline;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .logo-icon {
+    width: 30px;
+    height: 28px;
+    display: block;
+  }
+  .hero-menu {
+    padding-top: 19px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 35px;
+  }
+  .hero-section {
+    height: 251px;
+    padding-bottom: 19px;
+  }
+  .hero-back-blog {
+    display: none;
+  }
+  .main-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .marbella-des-secound {
+    display: none;
+  }
+
+  .weekly-update-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card:nth-child(n + 4) {
+    display: none;
+  }
+  /* .card {
+		  width: 320px;
+	  } */
+  /* .card-btn {
+		  left: 200px;
+	  } */
+  .upcoming-events {
+    display: none;
+  }
+  .latest-blog {
+    display: none;
+  }
+  .exclusive-magazine {
+    width: 360px;
+    height: 850px;
+  }
+
+  .newsletter-checkbox .form-input .join-club-btn .input-with-image {
+    width: 320px;
+  }
+
+  .form {
+    display: block;
+  }
+  .lable {
+    padding-top: 20px;
+  }
+
+  .marbslifestyle-img img {
+    position: absolute;
+    top: 60px;
+    right: -120px;
+    width: 320px;
+    height: 230px;
+    overflow: hidden;
+  }
+  .exclusive-marbsl {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .exclusive-magazine h1 {
+    padding-top: 32px;
+    font-size: 28px;
+  }
+  .exclusive-form-section {
+    padding-top: 120px;
+  }
+  .footer-logo {
+    display: block;
+    height: 19px;
+    width: 197px;
+  }
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .col-span-2 {
+    grid-column: auto;
+  }
+
+  .footer-Unlock-title {
+    padding-top: 50px;
+    font-size: 44px;
+  }
+
+  .footer-link-list li {
+    font-size: 14px;
+  }
+
+  .Subscribe h6 {
+    font-size: 18px;
+  }
+  .weekly-update-form {
+    width: 320px;
+  }
+
+  .footer-social-section h6 {
+    font-size: 12px;
+  }
+  .footer-social-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-social-icon {
+    padding-left: 20px;
+  }
+
+  .footer-border .copy-right-footer {
+    display: none;
+  }
+}
+/* for mobile responsive */
+@media only screen and (max-width: 575px) {
+  .marbella-read-more {
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+  }
+  .fa-angle-down {
+    text-decoration-line: underline;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .logo-icon {
+    width: 30px;
+    height: 28px;
+    display: block;
+  }
+  .hero-menu {
+    padding-top: 19px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 35px;
+  }
+  .hero-section {
+    height: 251px;
+    padding-bottom: 19px;
+  }
+  .hero-back-blog {
+    display: none;
+  }
+  .main-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .marbella-des-secound {
+    display: none;
+  }
+
+  .weekly-update-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card:nth-child(n + 4) {
+    display: none;
+  }
+  /* .card {
+		  width: 320px;
+	  } */
+  /* .card-btn {
+		  left: 200px;
+	  } */
+  .upcoming-events {
+    display: none;
+  }
+  .latest-blog {
+    display: none;
+  }
+  .exclusive-magazine {
+    width: 360px;
+    height: 850px;
+  }
+
+  .newsletter-checkbox .form-input .join-club-btn .input-with-image {
+    width: 320px;
+  }
+
+  .form {
+    display: block;
+  }
+  .lable {
+    padding-top: 20px;
+  }
+
+  .marbslifestyle-img img {
+    position: absolute;
+    top: 60px;
+    right: -120px;
+    width: 320px;
+    height: 230px;
+    overflow: hidden;
+  }
+  .exclusive-marbsl {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .exclusive-magazine h1 {
+    padding-top: 32px;
+    font-size: 28px;
+  }
+  .exclusive-form-section {
+    padding-top: 120px;
+  }
+  .footer-logo {
+    display: block;
+    height: 19px;
+    width: 197px;
+  }
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .col-span-2 {
+    grid-column: auto;
+  }
+
+  .footer-Unlock-title {
+    padding-top: 50px;
+    font-size: 44px;
+  }
+
+  .footer-link-list li {
+    font-size: 14px;
+  }
+
+  .Subscribe h6 {
+    font-size: 18px;
+  }
+  .weekly-update-form {
+    width: 320px;
+  }
+
+  .footer-social-section h6 {
+    font-size: 12px;
+  }
+  .footer-social-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-social-icon {
+    padding-left: 20px;
+  }
+
+  .footer-border .copy-right-footer {
+    display: none;
+  }
+}
+
+/* mobile responsive */
+
+@media only screen and (max-width: 750px) {
+  .marbslifestyle-logo img {
+    display: none;
+  }
+  .marbslifestyle-logo-phn img {
+    display: block;
+    width: 170px;
+  }
+  .nav li {
+    position: relative;
+    z-index: 999;
+  }
+  .barToggle {
+    display: inline-block;
+  }
+  .topBarSection {
+    flex-direction: column-reverse;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  .topBarSection .header-section {
+    overflow: hidden;
+    white-space: nowrap;
+
+    width: 1220px;
+    transform: translateX(0px);
+    animation: 17.375s linear 0s infinite normal none running animationAdd;
+    overflow: hidden;
+  }
+  .nav .list {
+    display: none;
+  }
+
+  .marbella-read-more {
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+  }
+  .fa-angle-down {
+    text-decoration-line: underline;
+  }
+  .hero-menu {
+    padding-top: 19px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 23px;
+  }
+  .hero-section {
+    height: 251px;
+    padding-bottom: 19px;
+  }
+  .hero-back-blog {
+    display: none;
+  }
+  .main-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .marbella-des-secound {
+    display: none;
+  }
+
+  .weekly-update-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* .card:nth-child(n + 4) {
+		display: none;
+	} */
+  /* .card {
+		width: 320px;
+	} */
+  .card-btn {
+    left: 200px;
+  }
+
+  .exclusive-magazine {
+    width: 360px;
+    height: 850px;
+  }
+
+  .newsletter-checkbox {
+    width: 320px;
+  }
+  .input-with-image {
+    width: 100%;
+  }
+  .join-club-btn {
+    width: 100%;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .form {
+    display: block;
+  }
+  .lable {
+    padding-top: 20px;
+  }
+
+  .marbslifestyle-img img {
+    position: absolute;
+    top: 60px;
+    right: -120px;
+    width: 320px;
+    height: 230px;
+    overflow: hidden;
+  }
+  .exclusive-marbsl {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .exclusive-magazine h1 {
+    padding-top: 32px;
+    font-size: 28px;
+  }
+  .ex-sec-heading {
+    max-width: 300px;
+    position: relative;
+    z-index: 9;
+  }
+  .ex-sec-sub-tx {
+    max-width: 205px;
+    position: relative;
+    z-index: 9;
+  }
+  .exclusive-form-section {
+    padding-top: 120px;
+  }
+  .footer-logo {
+    display: block;
+    height: 19px;
+    width: 197px;
+  }
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .col-span-2 {
+    grid-column: auto;
+  }
+
+  .footer-Unlock-title {
+    padding-top: 50px;
+    font-size: 44px;
+  }
+
+  .footer-link-list li {
+    font-size: 14px;
+  }
+
+  .Subscribe h6 {
+    font-size: 18px;
+  }
+  .weekly-update-form {
+    width: 300px;
+  }
+
+  .footer-social-section h6 {
+    font-size: 12px;
+  }
+  .footer-social-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-social-icon {
+    padding-left: 20px;
+  }
+
+  .footer-border .copy-right-footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .choice-card-section {
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .choice-card-section {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .choice-card-section {
+    grid-template-columns: 1fr 1fr;
+  }
+  .latest-blog {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .choice-card-section {
+    /* width: 320px; */
+    grid-template-columns: 1fr;
+  }
+}
+/* responsive */
+
+@media only screen and (max-width: 1400px) {
+  .header-section li,
+  .header-icon {
+    font-size: 12px;
+  }
+  .header-marq-item img,
+  .header-icon img {
+    width: 15px;
+  }
+  .header-section li {
+    gap: 7px;
+  }
+  .nav li {
+    font-size: 13px;
+  }
+  .nav .logo {
+    width: 200px;
+  }
+  .nav .logo img {
+    width: 100%;
+  }
+  .nav-btn {
+    font-size: 14px;
+    width: 65px;
+    height: 40px;
+  }
+  .nav-btn-section img {
+    height: 40px;
+  }
+  .nav-register-btn {
+    height: 40px;
+    font-size: 14px;
+    width: 70px;
+  }
+  .nav-btn-section {
+    gap: 6px;
+  }
+  .nav-social-icon {
+    gap: 10px;
+  }
+  .nav-social-icon img {
+    width: 9px;
+  }
+  .nav,
+  .header-section {
+    padding: 20px;
+  }
+}
+.marqLive {
+  overflow: hidden;
+  background: #f4f9f9;
+}
+@media screen and (max-width: 1000px) {
+  .nav li {
+    position: relative;
+    z-index: 999;
+  }
+  .barToggle {
+    display: inline-block;
+  }
+  .topBarSection {
+    flex-direction: column-reverse;
+  }
+  .topBarSection .header-section {
+    overflow: hidden;
+    white-space: nowrap;
+
+    width: 1220px;
+    transform: translateX(0px);
+    animation: 17.375s linear 0s infinite normal none running animationAdd;
+    overflow: hidden;
+  }
+  .nav .list {
+    display: none;
+  }
+}
+
+.nav-main-ctx {
+  position: relative;
+}
+
+.hov-sub-menu {
+  width: 270px;
+  position: absolute;
+  top: 38px;
+  left: auto;
+  right: 3px;
+  border-radius: 10px;
+  padding: 12px 24px 10px 24px;
+  z-index: 1;
+  box-shadow: 0 0 8px 0 rgba(21, 30, 74, 0.1);
+  background: #fff;
+  transition: all linear 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.under-line-active {
+  position: absolute;
+  left: 12px;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.nav-main-ctx:hover .hov-sub-menu,
+.nav-main-ctx:hover .under-line-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-main-ctx .fa-angle-down {
+  transition: all linear 0.3s;
+}
+.nav-main-ctx:hover .fa-angle-down {
+  transform: rotate(180deg);
+}
+
+.menu-container .menu-link {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.hov-sub-menu::before {
+  top: -6px;
+  right: 10px;
+  content: '';
+  margin: 0;
+  box-shadow: 0px 0px 8px 0px rgba(21, 30, 74, 0.1);
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  z-index: -1;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.hov-sub-menu::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px 10px 0 0;
+  z-index: 2;
+  width: 100%;
+  height: 20px;
+  background: #fff;
+}
+
+.hov-sub-menu .sub-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  padding: 8px 0;
+  transition: 0.3s;
+  color: #102a66;
+}
+.hov-sub-menu .sub-list:hover {
+  color: #007fb6;
+}
+.hov-sub-menu .sub-list .icon {
+  width: 20px;
+}
+.hov-sub-menu.mobile {
+  position: inherit;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: none;
+  padding: 0;
+  height: 0;
+  transition: 0.3s;
+}
+
+.hov-sub-menu.mobile .sub-list.icon {
+  width: 15px;
+}
+
+.hov-sub-menu.mobile.active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+/* .mobile-menu-list .hov-sub-menu {
+} */
+.mobile-menu-list .dropdown-btn[aria-expanded='false'] .fa-angle-down {
+  transition: 0.3s;
+}
+.mobile-menu-list .dropdown-btn[aria-expanded='true'] .fa-angle-down {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+@keyframes animationAdd {
+  100% {
+    transform: translateX(-924px);
+  }
+}
+
+.mobile-menu-sidebar {
+  margin-top: -16px;
+  z-index: 10;
+  position: absolute;
+  background: white;
+  width: 100%;
+  left: 0;
+  padding: 20px 0;
+  opacity: 0;
+  top: -400px;
+  transition: all ease-in 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1000px) {
+  .ul.mobile-menu-sidebar {
+    display: none;
+  }
+}
+.mobile-menu-sidebar.menu-open {
+  top: 80px;
+  opacity: 1;
+}
+.mobile-menu-sidebar .menu-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 30px;
+  list-style: none;
+  font-size: 18px;
+  font-family: var(--montserrat-font);
+}
+@media screen and (min-width: 1000px) {
+  .mobile-menu-sidebar.menu-open {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.mm-bottom-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 10px;
+}
+
+.mm-bb-social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.mm-bb-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.mm-bb-action img {
+  width: 20px;
+}
+
+.mm-key-btn {
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  display: inline-flex;
+  width: auto;
+  padding: 8px 10px;
+  gap: 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.mm-register-btn {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background: transparent;
+  display: inline-flex;
+  width: auto;
+  padding: 8px 10px;
+  gap: 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.mm-register-btn:hover {
+  color: #fff;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.mm-key-btn:hover {
+  background: var(--secondary-color);
+  display: inline-flex;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 450px) {
+  .mobile-menu-sidebar .menu-lists {
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+  .hov-sub-menu .sub-list {
+    gap: 3px;
+    font-size: 13px;
+    padding: 6px 0;
+  }
+  .hov-sub-menu .sub-list .icon {
+    width: 16px;
+  }
+  .nav-btn {
+    font-size: 12px;
+    width: 50px;
+    height: 30px;
+  }
+  .barToggle {
+    height: 30px;
+    width: 30px;
+  }
+  .nav {
+    gap: 7px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.weekly-news-for-wrap {
+  position: relative;
+}
+
+.weekly-section-main {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  bottom: 175px;
+}
+@media screen and (max-width: 700px) {
+  .weekly-news-for-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .weekly-section-main {
+    position: inherit;
+    bottom: 0;
+    margin-top: 20px;
+  }
+  .weekly-update-form input {
+    width: 100%;
+    padding-left: 10px;
+    border-style: none;
+  }
+}
+
+.magazine.immerese-magazine {
+  max-width: 917px;
+  width: 100%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.magazine-section {
+  margin-top: -160px;
+  position: relative;
+}
+
+.section-wrap-for-magazine-wrap {
+  background: #f4f9f9;
+}
+.main-section.magazine-form-box {
+  overflow: hidden;
+}
+.main-section.magazine-form-box .exclusive-marbsl {
+  max-width: 917px;
+}
+
+@media (max-width: 1000px) {
+  .main-section.magazine-form-box {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .magazine-section {
+    margin-top: 0;
+  }
+
+  .main-section.magazine-form-box .exclusive-magazine {
+    border-radius: 0;
+  }
+}
