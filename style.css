@@ -1077,10 +1077,10 @@ a {
     display: block;
   }
   .hero-menu {
-    padding-top: 19px;
+    padding-top: 20px;
     display: flex;
     flex-direction: row-reverse;
-    padding-right: 35px;
+    padding-right: 30px;
   }
   .hero-section {
     height: 251px;
