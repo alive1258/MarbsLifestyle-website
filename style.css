@@ -115,16 +115,14 @@ a {
 }
 
 /* Navigation layout */
-.navbar {
-  background-color: #ffffff;
-}
+
 .nav {
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 15px 40px;
   align-items: center;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
 }
 
 .logo-icon {
