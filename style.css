@@ -117,6 +117,7 @@ a {
 /* Navigation layout */
 .navbar {
   background-color: #ffffff;
+  width: 100%;
 }
 .nav {
   display: flex;
